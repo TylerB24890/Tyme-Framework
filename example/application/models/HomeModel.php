@@ -16,7 +16,6 @@ class HomeModel extends BaseModel
     //data passed to the home index view
     public function index()
     {   
-		//set your dynamic page elements here
 		$this->viewModel->__set('page-title', 'Welcome to the Tyme Framework!');
         return $this->viewModel;
     }

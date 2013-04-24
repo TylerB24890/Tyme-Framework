@@ -25,7 +25,7 @@
 		
 		<!-- Windows 8 -->
 		<meta name="application-name" content="<?php echo $headerInfo['title']; ?>" /> 
-		<meta name="msapplication-TileColor" content="<?php echo $headerInfo['win8-tile-color']; ?>"/> 
+		<meta name="msapplication-TileColor" content=""/> 
 		<meta name="msapplication-TileImage" content="<?php echo $headerInfo['logo']; ?>" />
 		
 		<!-- Twitter -->
@@ -43,3 +43,23 @@
 
 	</head>
 	<body>
+		<header>
+			<div class='container'>
+				<div class='logo'>
+					<h2>Tyme Framework</h2>
+				</div>
+				<div class='top-nav'>
+					<nav id='header-nav'>
+						<ul>
+							<li><a href='home'>Home</a></li>
+							<li><a href='about'>About</a></li>
+							<li><a href='documentation'>Docs</a></li>
+							<li><a href='contribute'>Contribute</a></li>
+							<li><a href='contact'>Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		<div class='container'>

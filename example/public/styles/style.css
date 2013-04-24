@@ -4,7 +4,7 @@
 	@author		Tyler Bailey
 	@file		style.css
 	
-	@desc		Default Framework Stylesheet
+	@desc		This is the default styles of the Tyme Framework
 
 **/
 
@@ -101,36 +101,121 @@ button {width: auto; overflow: visible;}
 
 
 /*******************
-	ERRORS
+	GLOBAL
 ********************/
-.error { 
-	font-weight: bold;
-	color: red;
+body {
+	font-family: Verdana, sans-serif;
+	background: #FFF;
+	color: #333;
 }
-.db-error, .db-error pre  {
-	font: 12px Arial, Helvetica, sans-serif; 
-}
-.db-error {
-	padding: 0.75em;
-	margin: 0.75em;
-	border: 1px solid #990000;
-	max-width: 400px;
-	color: #990000;
-	background-color: #FDF0EB;
+
+	header {
+		width: 100%;
+		height: 75px;
+		background-color: #333;
+		color: #FFF;
+		border-bottom: 1px solid #333;
+
+		-moz-box-shadow: 0 0 5px #888;
+		-webkit-box-shadow: 0 0 5px#888;
+		box-shadow: 0 0 5px #888;
+	}
+		
+		.logo {
+			display: inline-block;
+		}
+		
+		.top-nav {
+			float: right;
+			margin-top: 25px;
+		}
+
+		nav#header-nav > ul li{
+			list-style-type: none;
+			display: inline;
+			margin: 0 8px;
+		}
+			nav#header-nav a {
+				color: #FFF;
+				text-decoration: none;
+			}
+				nav#header-nav a:hover {
+					text-decoration: underline;
+				}
+		
+		
+	footer {
+		width: 100%;
+		border-top: 1px solid #333;
+		margin-top: 15px;
+		padding-top: 10px;
+		text-align: center;
+	}
+
+	.container {
+		width: 75%;
+		margin: 0 auto;
+	}
 	
-	-moz-border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-}
-.db-error h3 {
-	margin: 0;
-	padding-bottom: 0.25em;
-	border-bottom: 1px solid #990000;
-}
-.db-error label {
-	display: block;
-	padding-top: 1em;
-	font-weight: bold;
-}
-.db-error pre {
-	margin: 0;
-}
+	/* Typography */
+	h1 { 
+		font-size: 2em;
+		margin: 1em 0;
+	}
+	h2 {
+		font-size: 1.7em;
+		margin: .7em 0;
+	}
+	h3 {
+		font-size: 1.5em;
+		margin: .5em 0;		
+	}
+	h4 {
+		font-size: 1.3em;
+		margin: .3em 0;	
+	}
+	
+	pre {
+		border: 1px solid #3366CC;
+		background-color: #E5ECF9;
+		padding: 0.5em;
+		font-family: Courier New, monospace;
+	}
+	code {
+		white-space: nowrap;
+	}
+	p, li, pre {
+		line-height: 1.5em;
+	}
+	
+		/* Errors */
+		.error { 
+			font-weight: bold;
+			color: red;
+		}
+		.db-error, .db-error pre  {
+			font: 12px Arial, Helvetica, sans-serif; 
+		}
+		.db-error {
+			padding: 0.75em;
+			margin: 0.75em;
+			border: 1px solid #990000;
+			max-width: 400px;
+			color: #990000;
+			background-color: #FDF0EB;
+			-moz-border-radius: 0.5em;
+			-webkit-border-radius: 0.5em;
+		}
+		.db-error h3 {
+			margin: 0;
+			padding-bottom: 0.25em;
+			border-bottom: 1px solid #990000;
+		}
+		.db-error label {
+			display: block;
+			padding-top: 1em;
+			font-weight: bold;
+		}
+		.db-error pre {
+			margin: 0;
+		}

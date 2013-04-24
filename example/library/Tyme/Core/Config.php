@@ -22,7 +22,6 @@ $app_url = ""; //url to application or website
 $app_author = ""; //application developer
 $app_description = ""; //app description for SEO
 $app_keywords = ""; //app keywrods for SEO
-$win8_tile_color = ""; //enter color value (ex: #349ed5)
 $app_logo = ""; //path to logo for Social Media Sharing
 $author_email = ""; //developer email
 
@@ -31,7 +30,6 @@ define('APP_URL', $app_url);
 define('APP_AUTHOR', $app_author);
 define('APP_DESCRIPTION', $app_description);
 define('APP_KEYWORDS', $app_keywords);
-define('WIN8_COLOR', $win8_tile_color);
 define('APP_LOGO', $app_logo);
 define('AUTHOR_EMAIL', $author_email);
 

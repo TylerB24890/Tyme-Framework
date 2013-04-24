@@ -30,7 +30,7 @@ class BaseModel
     //establish viewModel data that is required for all views in this method (i.e. base.php)
     protected function commonViewData() {
 		//include app configuration file
-		$this->viewModel->__set('siteInfo', array( 'title' => APP_NAME, 'author' => APP_AUTHOR, 'description' => APP_DESCRIPTION, 'keywords' => APP_KEYWORDS, 'win8_tile_color' => WIN8_COLOR, 'url' => APP_URL, 'logo' => APP_LOGO ));
+		$this->viewModel->__set('siteInfo', array( 'title' => APP_NAME, 'author' => APP_AUTHOR, 'description' => APP_DESCRIPTION, 'keywords' => APP_KEYWORDS, 'url' => APP_URL, 'logo' => APP_LOGO ));
 		$this->viewModel->__set('copyright', 'Copyright &copy; 2013. <a href="' . APP_URL . '">' . APP_NAME . "</a>. " . "All Rights Reserved.");
     }
 
