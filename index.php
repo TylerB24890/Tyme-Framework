@@ -12,8 +12,9 @@
 
 **************************************/
 
-//define the site root
-define('APP_ROOT', '');
+//define app root
+define('APP_ROOT', ''); // ** REQUIRED **
+define('SITE_ROOT', '/Tyme/'); //used for site navigation ** REQUIRED **
 
 //include application configuration file
 include_once(APP_ROOT . 'library/Tyme/Core/Config.php');
