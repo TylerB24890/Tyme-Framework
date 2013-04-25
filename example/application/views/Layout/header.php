@@ -6,6 +6,9 @@
 	<head>
 
 		<?php
+		
+		session_start();
+		
 		//get site information from the BaseModel
 		$headerInfo = $viewModel->__get('siteInfo');
 		?>
@@ -18,14 +21,18 @@
 		<meta type='author' content='<?php echo $headerInfo['author']; ?>'>
 		
 		<!-- Stylesheets -->
-		<link rel='stylesheet' type='text/css' href='<?php echo APP_ROOT . "public/styles/style.css";?>' />
+		<link rel='stylesheet' type='text/css' href='http://www.tylerb.me/Tyme/public/styles/style.css' />
+		
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		
 		<!-- Mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
 		<!-- Windows 8 -->
 		<meta name="application-name" content="<?php echo $headerInfo['title']; ?>" /> 
-		<meta name="msapplication-TileColor" content=""/> 
+		<meta name="msapplication-TileColor" content="<?php echo $headerInfo['win8-tile-color']; ?>"/> 
 		<meta name="msapplication-TileImage" content="<?php echo $headerInfo['logo']; ?>" />
 		
 		<!-- Twitter -->
@@ -43,6 +50,7 @@
 
 	</head>
 	<body>
+
 		<header>
 			<div class='container'>
 				<div class='logo'>
@@ -51,11 +59,11 @@
 				<div class='top-nav'>
 					<nav id='header-nav'>
 						<ul>
-							<li><a href='home'>Home</a></li>
-							<li><a href='about'>About</a></li>
-							<li><a href='documentation'>Docs</a></li>
-							<li><a href='contribute'>Contribute</a></li>
-							<li><a href='contact'>Contact</a></li>
+							<li><a href='<?php echo SITE_ROOT . "home"; ?>'>Home</a></li>
+							<li><a href='<?php echo SITE_ROOT . "about"; ?>'>About</a></li>
+							<li><a href='<?php echo SITE_ROOT . "documentation"; ?>'>Docs</a></li>
+							<li><a href='<?php echo SITE_ROOT . "contribute"; ?>'>Contribute</a></li>
+							<li><a href='<?php echo SITE_ROOT . "contact"; ?>'>Contact</a></li>
 						</ul>
 					</nav>
 				</div>

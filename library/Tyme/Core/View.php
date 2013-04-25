@@ -44,4 +44,15 @@ class View
         }
         
     }
+	
+	public function inlineRender($viewModel) {
+	
+		$templateFile = $this->viewFile;
+        
+        if (file_exists($this->viewFile)) {
+            include_once($this->viewFile);		
+        } else {
+            require_once("application/views/error/badtemplate.php");
+        } 
+	}
 }

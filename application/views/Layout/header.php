@@ -20,6 +20,10 @@
 		<!-- Stylesheets -->
 		<link rel='stylesheet' type='text/css' href='<?php echo APP_ROOT . "public/styles/style.css";?>' />
 		
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="<?php echo APP_ROOT . "favicon.ico"; ?>" />
+		<link rel="apple-touch-icon" href="<?php echo APP_ROOT . "apple-touch-icon.png"; ?>" />
+		
 		<!-- Mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		

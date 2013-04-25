@@ -19,21 +19,21 @@
  ******************/ 
 $app_name = ""; //name of application or website
 $app_url = ""; //url to application or website
-$app_author = ""; //application developer
+$app_dev = ""; //application author
 $app_description = ""; //app description for SEO
 $app_keywords = ""; //app keywrods for SEO
-$win8_tile_color = ""; //enter color value (ex: #349ed5)
 $app_logo = ""; //path to logo for Social Media Sharing
-$author_email = ""; //developer email
+$dev_email = ""; //app author email
+$contact_email = ""; //contact email for contact forms
 
 define('APP_NAME', $app_name);
 define('APP_URL', $app_url);
 define('APP_AUTHOR', $app_author);
 define('APP_DESCRIPTION', $app_description);
 define('APP_KEYWORDS', $app_keywords);
-define('WIN8_COLOR', $win8_tile_color);
 define('APP_LOGO', $app_logo);
 define('AUTHOR_EMAIL', $author_email);
+define('CONTACT_EMAIL', $contact_email);
 
 
 /******************

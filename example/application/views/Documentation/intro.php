@@ -1,6 +1,5 @@
 
-
-	<?php echo "<h1 class='title'>" . $viewModel->__get('page-title') . "</h1>"; ?>
+	<h1 class='title'><?php echo $viewModel->__get('page-title'); ?></h1>
 	
 	<div class='doc-nav'>
 		<nav id='docs'>
@@ -9,8 +8,9 @@
 	</div>
 	
 	<div class='doc-container'>
-		<h4>Please choose a section to the left</h4>
+		This is where all the Introduction Documentation Will Go
 	</div>
-	
+
+
 
 

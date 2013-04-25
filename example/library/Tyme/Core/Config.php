@@ -17,13 +17,14 @@
  *	General App Settings
  *
  ******************/ 
-$app_name = ""; //name of application or website
-$app_url = ""; //url to application or website
-$app_author = ""; //application developer
-$app_description = ""; //app description for SEO
-$app_keywords = ""; //app keywrods for SEO
+$app_name = "Tyme Framework"; //name of application or website
+$app_url = "http://www.tylerb.me/Tyme"; //url to application or website
+$app_author = "Tyler Bailey"; //application author
+$app_description = "A minimalistic framework for rapid php application development"; //app description for SEO
+$app_keywords = "Tyme, php, framework, code, coding, programming, mvc, object oriented, object, oriented"; //app keywrods for SEO
 $app_logo = ""; //path to logo for Social Media Sharing
-$author_email = ""; //developer email
+$author_email = "tylerb.media@gmail.com"; //app author email
+$contact_email = "tylerb.media@gmail.com"; //contact email for contact forms
 
 define('APP_NAME', $app_name);
 define('APP_URL', $app_url);
@@ -32,6 +33,7 @@ define('APP_DESCRIPTION', $app_description);
 define('APP_KEYWORDS', $app_keywords);
 define('APP_LOGO', $app_logo);
 define('AUTHOR_EMAIL', $author_email);
+define('CONTACT_EMAIL', $contact_email);
 
 
 /******************
@@ -39,10 +41,10 @@ define('AUTHOR_EMAIL', $author_email);
  *	Database Connection Settings
  *
  ******************/ 
-$db_host = ""; //database host
-$db_user = ""; //database username
-$db_pass = ""; //database password
-$db_name = ""; //database name
+$db_host = "localhost"; //database host
+$db_user = "root"; //database username
+$db_pass = "Redalert420"; //database password
+$db_name = "tyme"; //database name
 $db_port = "3306"; //3306 is MySQL default port
 
 define('DB_HOST', $db_host);

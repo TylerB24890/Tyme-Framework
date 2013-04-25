@@ -26,6 +26,9 @@ abstract class BaseController
                 
         //establish the view object
         $this->view = new View(get_class($this), $action);
+		
+		//establish validation security object
+		$this->validate = new ValidationFactory();
     }
         
     //executes the requested method

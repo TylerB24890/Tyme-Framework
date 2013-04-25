@@ -25,6 +25,9 @@ class BaseModel
 		
 		//istantiate Database object
 		$this->database = new Database("mysql:host=".DB_HOST.";dbname=".DB_NAME.";dbport=".DB_PORT."", DB_USER, DB_PASS);
+		
+		//establish validation security object
+		$this->validate = new ValidationFactory();
     }
 
     //establish viewModel data that is required for all views in this method (i.e. base.php)

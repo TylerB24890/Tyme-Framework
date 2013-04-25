@@ -28,5 +28,10 @@ class DocumentationController extends BaseController
     {		
 		$this->view->render($this->model->index());
     }
+	
+	protected function intro()
+	{
+		$this->view->render($this->model->intro());
+	}
 }
 
