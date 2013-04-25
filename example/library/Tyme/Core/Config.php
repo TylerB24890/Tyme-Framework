@@ -41,10 +41,10 @@ define('CONTACT_EMAIL', $contact_email);
  *	Database Connection Settings
  *
  ******************/ 
-$db_host = "localhost"; //database host
-$db_user = "root"; //database username
-$db_pass = "Redalert420"; //database password
-$db_name = "tyme"; //database name
+$db_host = ""; //database host
+$db_user = ""; //database username
+$db_pass = ""; //database password
+$db_name = ""; //database name
 $db_port = "3306"; //3306 is MySQL default port
 
 define('DB_HOST', $db_host);
