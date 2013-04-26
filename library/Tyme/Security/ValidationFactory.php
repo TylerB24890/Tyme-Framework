@@ -52,6 +52,12 @@ class ValidationFactory extends BaseSecurity
 				return true;
 				break;
 				
+			case 'email':
+				if(!$this->validateEmail($data))
+					return false;
+				return true;
+				break;
+				
 			case 'url':
 				if(!$this->validateURL($data))
 					return false;

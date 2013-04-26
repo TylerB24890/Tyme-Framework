@@ -6,6 +6,9 @@
 	<head>
 
 		<?php
+		
+		session_start();
+		
 		//get site information from the BaseModel
 		$headerInfo = $viewModel->__get('siteInfo');
 		?>
@@ -18,11 +21,11 @@
 		<meta type='author' content='<?php echo $headerInfo['author']; ?>'>
 		
 		<!-- Stylesheets -->
-		<link rel='stylesheet' type='text/css' href='<?php echo APP_ROOT . "public/styles/style.css";?>' />
+		<link rel='stylesheet' type='text/css' href='<?php echo SITE_ROOT . "public/styles/style.css"; ?>' />
 		
 		<!-- Favicons -->
-		<link rel="shortcut icon" href="<?php echo APP_ROOT . "favicon.ico"; ?>" />
-		<link rel="apple-touch-icon" href="<?php echo APP_ROOT . "apple-touch-icon.png"; ?>" />
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		
 		<!-- Mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,3 +50,24 @@
 
 	</head>
 	<body>
+
+		<header>
+			<div class='container'>
+				<div class='logo'>
+					<h2>Tyme Framework</h2>
+				</div>
+				<div class='top-nav'>
+					<nav id='header-nav'>
+						<ul>
+							<li><a href='<?php echo SITE_ROOT . "home"; ?>'>Home</a></li>
+							<li><a href='<?php echo SITE_ROOT . "about"; ?>'>About</a></li>
+							<li><a href='<?php echo SITE_ROOT . "documentation"; ?>'>Docs</a></li>
+							<li><a href='<?php echo SITE_ROOT . "contribute"; ?>'>Contribute</a></li>
+							<li><a href='<?php echo SITE_ROOT . "contact"; ?>'>Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		<div class='container'>
