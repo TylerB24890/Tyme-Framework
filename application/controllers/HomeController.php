@@ -4,7 +4,7 @@
 
 	@project 	Tyme Framework
 	@author		Tyler Bailey
-	@version	1.1
+	@version	1.0
 	@page		HomeController.php
 	
 	@desc		This class controls the home page
