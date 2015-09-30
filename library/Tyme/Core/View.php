@@ -11,8 +11,7 @@
 
 **************************************/
 
-class View 
-{    
+class View {    
     
     protected $viewFile;
     

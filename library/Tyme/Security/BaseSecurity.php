@@ -11,25 +11,23 @@
 
 **************************************/
 
-class BaseSecurity
-{
+class BaseSecurity {
 	
 	/* Generate TymeToken() For Forms */
-	public function TymeToken() 
-	{
+	public function TymeToken() {
 		$TymeToken = md5(uniqid(rand(), TRUE)) . $this->randomString($length = 32);
 		return $TymeToken; 
 	}
 	
 	/* Generate CSRF Token */
-	public function csrfGenerate($key = 'general'){		
+	public function csrfGenerate($key = 'general') {		
 		$token = sha1(time().$_SERVER['REMOTE_ADDR'].$_SERVER['HTTP_USER_AGENT'].$this->randomString($length = 17));
 		$_SESSION['csrf'][$key] = $token;
         return $token;
     }
 	
 	/* Check CSRF Token */
-	protected function csrfCheck($key = 'general'){
+	protected function csrfCheck($key = 'general') {
 		//check if a token is even set
         if(empty($_SESSION['csrf'][$key])){
 			return false;
@@ -47,8 +45,7 @@ class BaseSecurity
     }
 	
 	/* Clean User Input */
-	public function cleanInput($data, $html = true)
-	{
+	public function cleanInput($data, $html = true) {
 		if(empty($data)) {
 			return false;
 		}
@@ -75,8 +72,7 @@ class BaseSecurity
 	}
 	
 	/* Validate Email Address */
-	protected function validateEmail($email)
-	{
+	protected function validateEmail($email) {
 		//check email against PHP's email filter
 		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			return false;
@@ -91,8 +87,7 @@ class BaseSecurity
 	}
 	
 	/* Validate Web URL */
-	protected function validateURL($data)
-	{
+	protected function validateURL($data) {
 		if(!filter_var($url, FILTER_VALIDATE_URL)) {
 			return false;
 		}

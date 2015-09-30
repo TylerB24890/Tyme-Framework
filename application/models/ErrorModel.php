@@ -11,11 +11,9 @@
 
 **************************************/
 
-class ErrorModel extends BaseModel
-{    
+class ErrorModel extends BaseModel {    
     //data passed to the bad URL error view
-    public function badURL()
-    {
+    public function badURL() {
         $this->viewModel->__set("title","Error - Bad URL");
         return $this->viewModel;
     }

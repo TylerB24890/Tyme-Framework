@@ -13,8 +13,7 @@
 
 **************************************/
 
-class ViewModel 
-{    
+class ViewModel {    
     
     //dynamically adds a property or method to the ViewModel instance
     public function __set($name,$val) {

@@ -12,8 +12,7 @@
 **************************************/
 
 
-class Loader 
-{
+class Loader {
     
     private $controllerName;
     private $controllerClass;
@@ -53,8 +52,7 @@ class Loader
             //does the class inherit from the BaseController class?
             if (in_array("BaseController",$parents)) {   
                 //does the requested class contain the requested action as a method?
-                if (method_exists($this->controllerClass,$this->action))
-                {
+                if (method_exists($this->controllerClass,$this->action)) {
                     return new $this->controllerClass($this->action,$this->urlValues);
                 } else {
                     //bad action/method error

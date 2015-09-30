@@ -12,8 +12,7 @@
 **************************************/
 
 
-class ErrorController extends BaseController
-{    
+class ErrorController extends BaseController {    
     //add to the parent constructor
     public function __construct($action, $urlValues) {
         parent::__construct($action, $urlValues);
@@ -23,8 +22,7 @@ class ErrorController extends BaseController
     }
     
     //bad URL request error
-    protected function badURL()
-    {
+    protected function badURL() {
         $this->view->render($this->model->badURL());
     }
 }

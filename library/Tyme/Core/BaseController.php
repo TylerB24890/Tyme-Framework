@@ -12,8 +12,7 @@
 
 **************************************/
 
-abstract class BaseController 
-{
+abstract class BaseController {
     
 	protected $viewModel;
     protected $urlValues;

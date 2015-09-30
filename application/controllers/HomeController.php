@@ -11,8 +11,7 @@
 
 **************************************/
 
-class HomeController extends BaseController
-{
+class HomeController extends BaseController {
 	protected $model;
 	
     //add to the parent constructor
@@ -24,12 +23,7 @@ class HomeController extends BaseController
     }
     
     //default method
-    protected function index()
-    {		
+    protected function index() {		
 		$this->view->render($this->model->index());
     }
-}
-
-function TestingSourceTree() {
-	echo "Working!";	
 }

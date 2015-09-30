@@ -11,8 +11,7 @@
 
 **************************************/
 
-class Database extends PDO
-{
+class Database extends PDO {
 	private $error;
 	private $sql;
 	private $bind;

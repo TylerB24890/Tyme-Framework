@@ -20,8 +20,7 @@ define('SITE_ROOT', '/Tyme/'); //used for site navigation ** REQUIRED **
 include_once(APP_ROOT . 'library/Tyme/Core/Config.php');
 
 //load the required classes
-function tyme_autoload($class_name) 
-{
+function tyme_autoload($class_name) {
     // List all the class directories in the array.
     $array_paths = array(
         APP_ROOT . 'library/Tyme/Core/',
@@ -29,11 +28,11 @@ function tyme_autoload($class_name)
         APP_ROOT . 'application/controllers/',
 		APP_ROOT . 'application/models/'
     );
-    foreach($array_paths as $path)
-    {
+	
+    foreach($array_paths as $path) {
         $file = sprintf('%s/%s.php', $path, $class_name);
-        if(is_file($file)) 
-        {
+		
+        if(is_file($file)) {
             require_once($file);
         } 
     }

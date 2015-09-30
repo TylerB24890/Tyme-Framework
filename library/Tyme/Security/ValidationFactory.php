@@ -12,11 +12,9 @@
 
 **************************************/
 
-class ValidationFactory extends BaseSecurity
-{
-	/* Factory Validation Function */
-	public function validateData($data, $type)
-	{
+class ValidationFactory extends BaseSecurity {
+	
+	public function validateData($data, $type) {
 		
 		$data = trim($data);
 		$type = trim($type);
